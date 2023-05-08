@@ -17,3 +17,4 @@ spec:
         image: fabricioveronez/web-page:green
         ports:
         - containerPort: 80
+      serviceAccountName: webcolor

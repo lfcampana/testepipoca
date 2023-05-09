@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pokemonapp
-        image: campana123/pokemon-app:v1
+        image: campana123/pokemon-app:v2
         ports:
         - containerPort: 80
       serviceAccountName: pokemonapp

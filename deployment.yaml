@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webcolor
+  name: pokemonapp
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: webcolor
+      app: pokemonapp
   template:
     metadata:
       labels:
-        app: webcolor
+        app: pokemonapp
     spec:
       containers:
-      - name: webcolor
+      - name: pokemonapp
         image: campana123/pokemon-app:v1
         ports:
         - containerPort: 80
-      serviceAccountName: webcolor
+      serviceAccountName: pokemonapp

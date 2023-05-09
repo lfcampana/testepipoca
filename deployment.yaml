@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: webcolor
-        image: fabricioveronez/web-page:green
+        image: campana123/pokemon-app:v1
         ports:
         - containerPort: 80
       serviceAccountName: webcolor

@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: pipoca
-  namespace: default
+  namespace: argocd
   # Add labels to your application object.
   labels:
     name: pipoca

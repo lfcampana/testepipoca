@@ -54,7 +54,7 @@ spec:
     # or cluster name
     # name: in-cluster
     # The namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace
-    namespace: default
+    # namespace: default
     
   # Extra information to show in the Argo CD Application details tab
   info:

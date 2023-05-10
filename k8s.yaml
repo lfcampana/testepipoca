@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: pokeapp2
+  name: pipoca
   namespace: default
   # Add labels to your application object.
   labels:
-    name: pokeapp2
+    name: pipoca
 spec:  
   project: default  
   source:
@@ -21,7 +21,7 @@ spec:
       valueFiles:
       - values.yaml      
       values: |
-        fullnameOverride:  pokemonapp2
+        fullnameOverride:  pipoca
         image:
           repository: campana123/pokemon-app:v2
           

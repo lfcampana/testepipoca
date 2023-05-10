@@ -1,20 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: guestbook
-  # You'll usually want to add your resources to the argocd namespace.
-  namespace: argocd
-  # Add this finalizer ONLY if you want these to cascade delete.
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
-  # Add labels to your application object.
+  name: guestbook  
+  namespace: argocd    
   labels:
     name: guestbook
-spec:
-  # The project the application belongs to.
+spec:  
   project: default
-
-  # Source of the application manifests
   source:
     repoURL: https://github.com/argoproj/argocd-example-apps.git  # Can point to either a Helm chart repo or a git repo.
     targetRevision: HEAD  # For Helm, this refers to the chart version.

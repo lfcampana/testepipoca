@@ -1,11 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: pipoca
-  # namespace: default
-  # Add labels to your application object.
+  name: pokemon
+  namespace: argocd  
   labels:
-    name: pipoca
+    name: pokemon
 spec:  
   project: default  
   source:
@@ -54,7 +53,7 @@ spec:
     # or cluster name
     # name: in-cluster
     # The namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace
-    # namespace: default
+    namespace: pokemon
     
   # Extra information to show in the Argo CD Application details tab
   info:

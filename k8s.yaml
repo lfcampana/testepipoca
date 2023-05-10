@@ -26,8 +26,8 @@ spec:
           labels: {}
           hosts:
           - host: pokemonapp.192.168.49.51.nip.io        
-          paths:
-            - path: /
+            paths:
+              - path: /
               pathType: Prefix
               backend:
                 service:

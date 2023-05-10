@@ -11,7 +11,7 @@ spec:
     repoURL: https://github.com/lfcampana/helm.git
     targetRevision: 0.1.0  # For Helm, this refers to the chart version.
     path: application      
-    # chart: application  # Set this when pulling directly from a Helm repo. DO NOT set for git-hosted Helm charts.
+    chart: application  # Set this when pulling directly from a Helm repo. DO NOT set for git-hosted Helm charts.
     helm:
       passCredentials: false           
       # fileParameters:

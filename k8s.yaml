@@ -17,8 +17,8 @@ spec:
       values: |-
         fullnameOverride:  pipoca
         image:
-          repository: campana123/pokemon-app:v2
-          
+          repository: campana123/pokemon-app
+          tag: v2          
         ingress:
           enabled: true          
           annotations:

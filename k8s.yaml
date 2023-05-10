@@ -28,12 +28,12 @@ spec:
           - host: pokemonapp.192.168.49.51.nip.io        
           paths:
             - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: pokemonapp
-                port:
-                  number: 80  
+              pathType: Prefix
+              backend:
+                service:
+                  name: pokemonapp
+                  port:
+                    number: 80  
   destination:    
     server: https://kubernetes.default.svc    
     namespace: pokemon

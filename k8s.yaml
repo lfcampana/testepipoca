@@ -9,14 +9,9 @@ spec:
   project: default  
   source:
     repoURL: https://github.com/lfcampana/helm.git
-    targetRevision: HEAD  # For Helm, this refers to the chart version.
-    path: application      
-    chart: application  # Set this when pulling directly from a Helm repo. DO NOT set for git-hosted Helm charts.
-    helm:
-      passCredentials: false           
-      # fileParameters:
-      # - name: config
-      #   path: files/config.json      
+    targetRevision: main  
+    path: application          
+    helm:      
       valueFiles:
       - values.yaml      
       values: |
@@ -38,15 +33,7 @@ spec:
               service:
                 name: pokemonapp
                 port:
-                  number: 80
-
-
-      # Skip custom resource definition installation if chart contains custom resource definitions. Defaults to false
-      skipCrds: false      
-      version: v2    
-    # directory    
-    # plugin specific config    
-    
+                  number: 80  
   destination:
     # cluster API URL
     server: https://kubernetes.default.svc

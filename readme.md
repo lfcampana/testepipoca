@@ -59,4 +59,9 @@ Vou considerar que para este artigo uma nova instalação do linux, logo se algu
     
     substitua a palavra tema pelo [Meu tema](https://gist.github.com/lfcampana/34c0154d4d362bb1eb390a8b00272a84) ou procure por temas pela internet (existem milhares e são mto legais)
 
+4. Instalação do minikube
+    ```shell
+    curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+    sudo install minikube-linux-amd64 /usr/local/bin/minikube
+    ```
     

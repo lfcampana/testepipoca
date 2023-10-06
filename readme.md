@@ -19,18 +19,6 @@ Enjoy.
 - [Introdução ao Kubernetes: Simplificando a Orquestração de Contêineres com Minikube, Argo CD e Metallb](#introdução-ao-kubernetes-simplificando-a-orquestração-de-contêineres-com-minikube-argo-cd-e-metallb)
 - [Sumário](#sumário)
   - [Preparando o ambiente](#preparando-o-ambiente)
-  - [Instalação do Minikube](#instalação-do-minikube)
-  - [Inicializando o Cluster Kubernetes](#inicializando-o-cluster-kubernetes)
-  - [Criação de um Namespace para o Argo CD](#criação-de-um-namespace-para-o-argo-cd)
-  - [Instalação do Argo CD](#instalação-do-argo-cd)
-  - [Utilizando o comando `minikube service list`](#utilizando-o-comando-minikube-service-list)
-  - [Patch no Service para o Tipo LoadBalancer](#patch-no-service-para-o-tipo-loadbalancer)
-  - [Recuperando o Secret do Argo CD](#recuperando-o-secret-do-argo-cd)
-  - [Utilizando Port-forwarding para Acessar o Serviço](#utilizando-port-forwarding-para-acessar-o-serviço)
-  - [Instalação do Helm e Bibliotecas Úteis](#instalação-do-helm-e-bibliotecas-úteis)
-  - [Instalação do Metallb](#instalação-do-metallb)
-  - [Criação do l2advertisement.yaml](#criação-do-l2advertisementyaml)
-  - [Implantação de um Aplicativo de Exemplo com Nginx](#implantação-de-um-aplicativo-de-exemplo-com-nginx)
 
 ---
 
@@ -43,6 +31,7 @@ Vou considerar que para este artigo uma nova instalação do linux, logo se algu
    ```shell 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
+   Após a instalação, no log de instalação irá exibir no terminal alguns comandos para incluir o Brew no PATH, execute os comandos e siga para o próximo passo 
 2. **Tree**
     ```shell
     sudo apt-get install tree

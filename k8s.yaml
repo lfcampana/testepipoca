@@ -15,6 +15,7 @@ spec:
       valueFiles:
       - values.yaml      
       values: |-
+        # replicaCount: 5
         fullnameOverride:  pipoca
         image:
           repository: campana123/pokemon-app
